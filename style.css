@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    background-color: #22313f;
+    font-family: 'Itim', cursive;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.buttonWrapper {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#reset-button {
+    padding: 6px 20px;
+    background-color: #2e475e;
+    border-color: #fff;
+    border-width: 0.5px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-content {
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.5em 2em;
+    text-align: center;
+}
+
+#modal-close {
+    display: block;
+    margin: 1em auto;
+}
+
+.hidden {
+    display: none !important;
+}
